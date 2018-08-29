@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
+<html>
+<head>
+<title>Slide2Heart</title>
+<!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
+<style>
+.figure {
+	text-align:center;
+}
+.figure > img {
+	margin: 0px 10px;
+	image-rendering: pixelated;
+	width: 40%;
+}
+</style>
+</head>
+<body>
+<h1>Slide2Heart</h1>
+<p>A game where the player sildes in a 4*4 grid to reach the heart, while combacting obstacles and collecting star points</p>
+<!-- the <div> wrapping this image centers it on the page. -->
+<!-- TODO: drawing showing the main view of the game during play -->
+<div class="figure">
+<img src="game_design.jpg" />
+</div>
+<p>The game is played in a 4*4 grid. The grid contains objects like gummy,riflector,heart, wall and the blackhole which contains special properties. The player has to negotiate these objects in order to reach to the heart by sliding in all possible directions</p>
+
+<h2>Gameplay</h2>
+<p>
+<h3>Start:</h3>On the start of every game, the player and the objects are placed randomly. if in any case the objects collide as a result of being in the same grid , then the game resets. Once the player is initialized in a particular grid, then the user can use the following controls to reach to the heart</p>
+
+
+<h3>Controls/Movement:</h3>
+1. --> Slide right
+2. <-- Slide left
+3. Up arrow - Slide upwards
+4. Down arrow - Slide downwards
+
+<div class="figure">
+<img src="game_play.jpg" />
+</div>
+
+<h2> Object Properties</h2>
+<p>
+<h3>Riflector(Right Deflector):</h3>If a player hits this object, then it will always place the player perpendicular to its right. Refer the below figure for better understanding.</p>
+
+<p>
+<h3>wall:</h3> The player will stop sliding and come to an rest if it hits the wall.</p>
+
+<p>
+<h3>gummy:</h3> Hitting the gummy , will slow down the sliding of the player, but still the player can pass through the gummy, as if there was no wall.</p>
+
+<p>
+<h3>star:</h3> Every time the player hits a star, the player's point is incremented and simultaneously the star disappears from the grid. Note that the player may still be sliding.</p>
+
+<p>
+<h3>black hole :</h3> If the player hits this object, the player position is reset to the first cell in the bottom left of the grid . Also a point is decremented from the player's score. This is the most dangerous object, so be careful!</p>
+
+<p>
+<h3>Heart</h3> Well, you know it. You reach the goal.</p>
+
+<p>
+<h3>Win:</h3>To win you should have atleast 2 star points, when you hit the heart.</p>
+<div class="figure">
+<img src="win.jpg" />
+</div>
+
+<p>
+<h3>Loss:</h3> You loose if you hit the heart without having two star points.</p>
+
+<div class="figure">
+<img src="Loss.jpg" />
+</div>
+
+
+
+</p>
+<!-- TODO: illustrate your descriptions with more drawings -->
+<div class="figure">
+<img src="before-reset.png" />
+<img src="after-reset.png" />
+</div>
+
+<h2>Assets</h2>
+<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+
+</body>
+</html>
