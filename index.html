@@ -27,7 +27,11 @@
 
 <h2>Gameplay</h2>
 <p>
-<h3>Start:</h3>On the start of every game, the player and the objects are placed randomly. if in any case the objects collide as a result of being in the same grid , then the game resets. Once the player is initialized in a particular grid, then the user can use the following controls to reach to the heart</p>
+<h3>Start:</h3>On the start of every game, the player  is always placed on the bottom left corner of the grid while the other objects are placed randomly. if in any case the objects collide as a result of being in the same grid , then the game resets.  The user can use the following controls to slide (reach)to the heart</p>
+
+<div class="figure">
+<img src="start.jpg" />
+</div>
 
 
 <h3>Controls/Movement:</h3>
@@ -43,6 +47,9 @@
 <h2> Object Properties</h2>
 <p>
 <h3>Riflector(Right Deflector):</h3>If a player hits this object, then it will always place the player perpendicular to its right. Refer the below figure for better understanding.</p>
+<div class="figure">
+<img src="riflector.jpg" />
+</div>
 
 <p>
 <h3>wall:</h3> The player will stop sliding and come to an rest if it hits the wall.</p>
@@ -67,22 +74,26 @@
 
 <p>
 <h3>Loss:</h3> You loose if you hit the heart without having two star points.</p>
-
 <div class="figure">
 <img src="Loss.jpg" />
 </div>
 
+<p>
+<h3>Drawing:</h3> *Note* this part is taken from the design template of Stickoshet Robot.
+Drawing: The board is drawn with a skewed orthogonal projection and the Y axis shears slightly left. Objects are smoothly shaded and pastel colors are used. Score should be indicated by drawing hearts to the top right corner of the board.</p>
 
-
-</p>
-<!-- TODO: illustrate your descriptions with more drawings -->
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+<img src="drawing.jpg" />
 </div>
 
+
 <h2>Assets</h2>
-<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+<p>Textures <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. </p>
+<p>Objects in Blender format<a href="https://github.com/vivekgr/game0-design/blob/master/Slide2heart.blend"> objects</a>.</p>
+
+<h2>References</h2>
+<p> http://graphics.cs.cmu.edu/courses/15-466-f18/game0-designs/default/ </p>
+<p>https://www.rpggeek.com/forum/2618/ricochet-robots/variants</p>
 
 </body>
 </html>
