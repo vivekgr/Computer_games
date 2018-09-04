@@ -17,13 +17,13 @@
 </head>
 <body>
 <h1>Slide2Heart</h1>
-<p>A game where the player sildes in a 4*4 grid to reach the heart, while combacting obstacles and collecting star points.</p>
+<p>A game where the player sildes in a 8*8 grid to reach the heart, while combacting obstacles and collecting star points.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
 <!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
 <img src="game_design.jpg" />
 </div>
-<p>The game is played in a 4*4 grid. The grid contains objects like gummy,riflector,heart, wall and the blackhole which contains special properties. The player has to negotiate these objects in order to reach to the heart by sliding in all possible directions</p>
+<p>The game is played in a 8*8 grid. The grid contains objects like gummy,riflector,heart, wall and the blackhole which contains special properties. The player has to negotiate these objects in order to reach to the heart by sliding in all possible directions</p>
 
 <h2>Gameplay</h2>
 <p>
@@ -58,22 +58,22 @@
 <h3>gummy:</h3> Hitting the gummy , will slow down the sliding of the player, but still the player can pass through the gummy, as if there was no wall.</p>
 
 <p>
-<h3>star:</h3> Every time the player hits a star, the player's point is incremented and simultaneously the star disappears from the grid. Note that the player may still be sliding.</p>
+<h3>star:</h3> Every time the player hits a star, the player's point is incremented.</p>
 
 <p>
-<h3>black hole :</h3> If the player hits this object, the player position is reset to the first cell in the bottom left of the grid . Also a point is decremented from the player's score. This is the most dangerous object, so be careful!</p>
+<h3>black hole :</h3> If the player hits this object a point is decremented from the player's score. This is the most dangerous object, so be careful!</p>
 
 <p>
 <h3>Heart</h3> Well, you know it. You reach the goal.</p>
 
 <p>
-<h3>Win:</h3>To win you should have atleast 2 star points, when you hit the heart.</p>
+<h3>Win:</h3>To win you should have atleast 5 star points, when you hit the heart.</p>
 <div class="figure">
 <img src="win.jpg" />
 </div>
 
 <p>
-<h3>Loss:</h3> You loose if you hit the heart without having two star points.</p>
+<h3>Loss:</h3> You loose if you hit the heart without having 5 star points or have too may hole points as result of hitting it.</p>
 <div class="figure">
 <img src="Loss.jpg" />
 </div>
